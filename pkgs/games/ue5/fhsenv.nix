@@ -5,11 +5,11 @@
 
   targetPkgs = pkgs: with pkgs; [
     which
-    dotnet-sdk_3
+    dotnet-sdk_8
     pkg-config
     mono
     git
-    python2
+    python3
     vulkan-tools
     openssl
     xdg-user-dirs

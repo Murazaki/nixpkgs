@@ -7,7 +7,7 @@
 , libdrm
 , openssl
 , zlib
-, dotnet-sdk_3
+, dotnet-sdk_8
 , lttng-ust
 , krb5Full
 , vulkan-loader
@@ -20,7 +20,7 @@
 , xdg-user-dirs
 , pkg-config
 , git
-, python2
+, python3
 , mono
 , libgcc
 , cmake
@@ -79,7 +79,7 @@ let
     xorg.libXxf86vm
     xorg.libXdamage
     zlib
-    dotnet-sdk_3
+    dotnet-sdk_8
     lttng-ust
     krb5Full
 
@@ -133,12 +133,12 @@ in buildFHSUserEnvBubblewrap {
   unsharePid = false;
 
   targetPkgs = pkgs: with pkgs; [
-    dotnet-sdk_3
+    dotnet-sdk_8
     pkg-config
     coreutils
     which
     git
-    python2
+    python3
     mono
     libgcc
     cmake

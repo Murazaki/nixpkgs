@@ -1,9 +1,9 @@
-{ callPackage, stdenv, unzip, fetchurl, requireFile, dotnet-sdk_3, lib, writeScript, dotnetPackages, linkFarmFromDrvs, ... }:
+{ callPackage, stdenv, unzip, fetchurl, requireFile, dotnet-sdk_8, lib, writeScript, dotnetPackages, linkFarmFromDrvs, ... }:
 
 
-if !lib.versionAtLeast dotnet-sdk_3.version "3.1" then
-  throw "Dotnet sdk has to be atleast 3.1 or newer"
-else
+# if !lib.versionAtLeast dotnet-sdk_8.version "3.1" then
+#   throw "Dotnet sdk has to be atleast 3.1 or newer"
+# else
 
 let
   fhsenv = callPackage ./fhsenv.nix {};
