@@ -1,6 +1,6 @@
-{ callPackage, ... }:
+{ buildFHSEnv, ... }:
 
-(callPackage ./fhs {} {
+(buildFHSEnv {
   name = "build-ue5";
 
   targetPkgs = pkgs: with pkgs; [
@@ -24,3 +24,4 @@
     make
   ";
 })
+

@@ -1,4 +1,4 @@
-{ buildFHSUserEnvBubblewrap
+{ buildFHSEnv
 , stdenv
 , lib
 , writeShellScript
@@ -92,7 +92,7 @@ let
   LD_LIBRARY_PATH = lib.makeLibraryPath([
     stdenv.cc.cc.lib
   ] ++ common);
-in buildFHSUserEnvBubblewrap {
+in buildFHSEnv {
   name = "UnrealEditor";
 
   # Adapted from Steam wrapper
