@@ -33,7 +33,7 @@ let
 
 in stdenv.mkDerivation rec {
   pname = "ue5-unwrapped";
-  version = "5.0.1";
+  version = "5.4.1";
 
   sourceRoot = "UnrealEngine-${version}-release";
 
